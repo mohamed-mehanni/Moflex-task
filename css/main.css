@@ -1,0 +1,522 @@
+body {
+    box-sizing: border-box;
+    background-color: rgb(73, 70, 70);
+
+}
+
+header {
+    position: relative;
+    background-image: url('../img/heroBG.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-name {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-info {
+    padding-top: 35px;
+}
+
+.hero-info h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.hero-info p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.hero-info p span {
+    line-height: 1.9;
+}
+
+.hero-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    height: 50px;
+}
+
+.hero-form input {
+    padding: 12px;
+    width: 350px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+
+.hero-form .hero-button {
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0 4px;
+    cursor: pointer;
+}
+
+.navbar,
+.hero-info,
+.hero-form {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .hero-info h1 {
+        padding-top: 30px;
+    }
+
+    .hero-form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .hero-form input {
+        width: 80%;
+        height: 60px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+    .hero-form .hero-button {
+        border-radius: 4px;
+        width: 80%;
+        height: 60px;
+        padding: 12px;
+        margin-left: 40px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-form {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-form input {
+        width: 80%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .hero-form .hero-button {
+        border-radius: 4px;
+        width: 80%;
+        padding: 12px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar{
+        padding: 20px;
+    }
+    .hero-info h1 {
+        font-size: 25px;
+        line-height: 1.3;
+        padding: 5px 15px;
+    }
+
+    .hero-info p {
+        font-size: 18px;
+        line-height: 1.1;
+        padding: 0 15px;
+    }
+
+    .hero-info p span {
+        display: block;
+        margin-top: 8px;
+    }
+
+    .hero-form {
+        flex-direction: column;
+        height: auto;
+        padding: 0 15px;
+        gap: 5px;
+    }
+
+    .hero-form input {
+        width: 75%;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .hero-form .hero-button {
+        width: 75%;
+        padding: 12px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+
+
+/******/
+
+main {
+    background-color: rgb(73, 70, 70);
+}
+
+.features-section {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+.features-content {
+    width: 50%;
+}
+
+.features-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.features-content p {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.features-wrapper {
+    position: relative;
+    min-width: 300px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.features-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.features-video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 74%;
+    height: 61%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .features-section .container {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .features-content,
+    .features-wrapper {
+        width: 100% !important;
+    }
+
+    .features-content h1 {
+        font-size: 30px;
+    }
+
+    .features-content p {
+        font-size: 18px;
+    }
+}
+
+/****/
+
+
+
+.download-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 60px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.download-content {
+    max-width: 400px;
+    color: white;
+}
+
+.download-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: #f3f0f0;
+    font-weight: bold;
+}
+
+.download-content p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.image-box {
+    position: relative;
+    width: 600px;
+}
+
+.image-box img.phone {
+    width: 100%;
+    position: relative;
+}
+
+.download-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 60%;
+    z-index: 2;
+    box-shadow: 0 0 5px rgba(247, 242, 242, 0.4);
+}
+
+.download-box img.poster {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.download-box .info {
+    flex-grow: 1;
+}
+
+.download-box .info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.download-box .info p {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #4da6ff;
+}
+
+.icon-img {
+    width: 50px;
+
+}
+
+@media (max-width: 768px) {
+    .download-section {
+        flex-direction: column;
+        padding: 30px 5%;
+        gap: 30px;
+    }
+
+    .image-box {
+        width: 100%;
+    }
+
+    .download-content h1 {
+        font-size: 40px;
+    }
+
+    .download-content p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/***/
+
+.questions {
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #303030;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: white;
+    transform: none !important;
+    background-image: none;
+}
+
+
+
+.accordion-item {
+    background-color: #303030;
+    border: none;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-sec {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.form-sec input {
+    padding: 12px;
+    width: 390px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+
+.form-sec .form-button {
+    padding: 10px 33px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .form-sec {
+        flex-direction: row;
+        height: auto;
+    }
+
+
+    .form-sec input {
+        width: 90%;
+        height: 60px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+
+    .form-sec .form-button {
+        border-radius: 4px;
+        width: 90%;
+        height: 60px;
+        padding: 12px;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+
+    .form-sec {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .form-sec input {
+        width: 80%;
+        height: 60px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+
+
+    .form-sec .form-button {
+        border-radius: 4px;
+        height: 60px;
+        width: 80%;
+        padding: 12px;
+        margin-left: 40px;
+    }
+}
+
+
+
+
+/***/
+footer {
+    background-color: black;
+    color: #918a8a;
+    padding: 3rem 0;
+    padding-top: 10px;
+}
+
+
+
+.footer-link:hover {
+    color: red !important;
+}
